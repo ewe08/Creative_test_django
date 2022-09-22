@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <title>Григорий Логин</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/#">Григорий</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Обо мне</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#road">Мой путь</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="header" id="home">
+    <div class="header__text">
+        <h1>Привет</h1>
+        <h2>Я Григорий Логин</h2>
+    </div>
+</header>
+<section class="about" id="about">
+
+    <div class="container">
+        <p class="about__text">Меня зовут Логин Григорий. Я живу в Барнауле. Увлекаюсь
+            программированием с восьмого
+            класса. Сейчас мне 17 лет и я учусь в 11 классе. Являюсь одним из топ 100 учеников
+            Яндекс Лицея 2021 года. Играю на барабанах и состою в группе. Играю в разные
+            игры. Люблю уютные посиделки с друзьями в дискорде. Любитель тяжелой музыки</p>
+        <img class='about__image' src="{% static 'main/img/1.jpg' %}" alt="">
+    </div>
+</section>
+<section class="road" id="road">
+    <div class="container">
+        <img class="road__image" src="{% static 'main/img/3.jpg' %}" alt="">
+        <p class="road__text">Сначала я решил учить Python и поступил в Яндекс.Лицей, закончив
+            его с отличием. Позже решил заняться спортивным программированием и изучал C++. Смог
+            пройти на
+            региональный этап. Весной 2022 года поступил и успешно закончил программу Лицей++ от
+            Яндекса по направлению "Машинное обучение". Этим летом увлекся веб-разработкой и
+            самостоятельно изучал Django.
+            До этого выигрывал местные хакатоны по веб программированию на Flask.
+        </p>
+    </div>
+</section>
+<section class="contact" id="contacts">
+    <div class="container">
+        <p class="contact__text">
+            Связаться можно через
+            <a role="button" class="btn btn-primary" href="https://vk.com/ewe08">Вконтакте</a>
+            <a role="button" class="btn btn-secondary" href="https://github.com/ewe08">Github</a>
+            <a role="button" class="btn btn-warning"
+               href="mailto:wileere@yandex.ru?subject=Вопрос по интенсиву">Почта</a>
+        </p>
+        <img src="{% static 'main/img/4.jpg' %}" alt="" class="contact__image">
+    </div>
+</section>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="container">
+        <p class="col-md-4 mb-0 text-muted">© 2022 Григорий Логин. Все права защищены</p>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Главная</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">Обо мне</a></li>
+            <li class="nav-item"><a href="#road" class="nav-link px-2 text-muted">Мой путь</a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-muted">Контакты</a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+</body>
+</html>

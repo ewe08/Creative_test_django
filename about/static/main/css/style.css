@@ -1,0 +1,70 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 30px;
+}
+
+.header {
+    background: url("../img/2.jpg") center;
+    height: 70vh;
+    background-size: cover;
+}
+
+.header__text {
+    text-align: center;
+    padding-top: 300px;
+    padding-left: 30px;
+    color: white;
+    text-shadow: black 0 0 2px;
+}
+
+.container {
+    display: flex;
+}
+
+.about {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about__text {
+    padding-right: 10%;
+}
+
+.about__image {
+    height: 40vh;
+    border-radius: 2%;
+}
+
+.road {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f2f2f2;
+}
+
+.road__text {
+    padding-left: 10%;
+}
+
+.road__image {
+    height: 40vh;
+    border-radius: 2%;
+}
+.contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact__text{
+        padding-right: 20%;
+}
+.contact__image {
+    height: 40vh;
+    border-radius: 2%;
+}
+
